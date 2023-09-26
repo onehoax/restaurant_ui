@@ -12,10 +12,12 @@
           <Bars3Icon class="w-6" />
         </div>
       </div>
+      <!-- for screen >= md, always show it
+           for screens < md the visibility is controlled by value of "display" -->
       <ul
-        class="absolute right-0 border rounded-md bg-white shadow-md md:border-none md:shadow-none text-sm mt-2 md:mt-6"
+        :class="display ? 'block' : 'hidden'"
+        class="absolute right-0 border rounded-md bg-white shadow-md md:block md:border-none md:shadow-none text-sm mt-2 md:mt-6"
         id="menu"
-        :class="{ hidden: !display && windowSize < 768 }"
       >
         <NavLink name="Home" border="border-red-400">
           <HomeIcon class="w-5 h-5 mr-2" />

@@ -1,4 +1,4 @@
-# Mock Restaurant UI with Nuxt 3 and Tailwind
+# Mock Responsive Restaurant UI with Nuxt 3 and Tailwind
 
 ## Setup
 
